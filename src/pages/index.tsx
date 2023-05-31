@@ -1,20 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import { useTheme } from 'next-themes'
-
-const inter = Inter({ subsets: ['latin'] })
+import { ThemeToggleContext } from '@/context/ThemeToggle.context'
+import { useContext } from 'react'
+import { ThemeContext } from 'styled-components'
 
 export default function Home() {
-
-  const { theme, setTheme } = useTheme();
+  const { toggleTheme } = useContext(ThemeToggleContext)
 
   return (
     <>
-      <p>{theme}</p>
-      <button onClick={() => { setTheme('dark') }}>dark</button>
-      <button onClick={() => { setTheme('light') }}>light</button>
-      <button onClick={() => { setTheme('system') }}>system mode</button>
+      <button onClick={toggleTheme}>mudar</button>
     </>
   )
 }
