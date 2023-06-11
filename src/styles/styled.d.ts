@@ -10,6 +10,12 @@ declare module 'styled-components' {
             bgSecondary: string,
             bgDark: string
         },
-        fonts: {}
+        fonts: {},
+        buttons: {
+            outline: {
+                color: string,
+                borderColor: string
+            }
+        },
     }
 }

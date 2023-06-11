@@ -9,5 +9,11 @@ export default {
         bgSecondary: '#f4f4f4',
         bgDark: '#c2c2c2'
     },
-    fonts: {}
+    fonts: {},
+    buttons: {
+        outline: {
+            color: "#333",
+            borderColor: "#0404051a"
+        }
+    }
 } as DefaultTheme

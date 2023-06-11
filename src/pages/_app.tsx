@@ -7,7 +7,7 @@ import GlobalStyle from '@/styles/globals';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={light}>
+    <ThemeProvider theme={dark}>
       <GlobalStyle />
       <Component {...pageProps} />
     </ThemeProvider>
