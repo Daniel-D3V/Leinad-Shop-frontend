@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components';
 import light from '@/styles/themes/light'
