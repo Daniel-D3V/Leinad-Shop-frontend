@@ -13,7 +13,11 @@ export default {
     buttons: {
         outline: {
             color: "#999",
-            borderColor: "#ffffff1a"
+            borderColor: "#ffffff1a",
+            hover: {
+                color: "#ddd",
+                borderColor: "#ffffff33"
+            }
         }
     }
 } as DefaultTheme

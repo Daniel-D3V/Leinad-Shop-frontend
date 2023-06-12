@@ -15,6 +15,10 @@ declare module 'styled-components' {
             outline: {
                 color: string,
                 borderColor: string
+                hover: {
+                    color: string,
+                    borderColor: string
+                }
             }
         },
     }

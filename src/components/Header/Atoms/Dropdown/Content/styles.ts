@@ -6,10 +6,8 @@ export interface ContentStyledProps {
 
 export const ContentStyled = styled.div<ContentStyledProps>`
     display: ${props => props.active ? "flex" : "none"};
-    ${props => props.active && `
-        position: absolute;
-        bottom: 0;
-        transform: translate(0px, 40px);
-        flex-direction: column;
-    `}
+    position: absolute;
+    bottom: 0;
+    transform: translate(0px, 40px);
+    flex-direction: column;
 `

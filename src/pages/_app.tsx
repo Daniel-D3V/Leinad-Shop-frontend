@@ -1,15 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import type { AppProps } from 'next/app'
-import { ThemeProvider } from 'styled-components';
-import light from '@/styles/themes/light'
-import dark from '@/styles/themes/dark';
 import GlobalStyle from '@/styles/globals';
+import { ThemeProvider } from '@/context/ThemeProvider.context';
+import { EventProvider } from '@/context/EventProvider.context';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={dark}>
-      <GlobalStyle />
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <EventProvider>
+      <ThemeProvider>
+        <GlobalStyle />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </EventProvider>
   )
 }
