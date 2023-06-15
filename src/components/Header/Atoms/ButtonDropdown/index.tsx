@@ -1,19 +1,27 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { DropDownStyled } from './styles'
-import { ButtonToggle } from './ButtonToggle';
 import { Content } from './Content';
+import { ButtonIconToggle } from './ButtonIconToggle';
 
 type Props = {
     children: React.ReactNode
 }
 
-export function DropDown({ children }: Props) {
+const DropDown = ({ children }: Props) => {
     const [active, setActive] = useState(false);
+
+    const handleButtonClick = () => {
+        setActive(!active);
+    }
 
     return (
         <DropDownStyled onClick={() => { setActive(!active) }}>
-            <ButtonToggle toggle={() => { setActive(!active) }} />
+            <DropDown.ButtonToggle onClick={handleButtonClick} />
             <Content active={active}>{children}</Content>
         </DropDownStyled>
     )
 }
+
+DropDown.ButtonToggle = ButtonIconToggle;
+
+export { DropDown };

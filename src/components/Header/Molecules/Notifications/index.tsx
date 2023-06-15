@@ -1,8 +1,12 @@
 import { FaRegBell } from "react-icons/fa";
 import { ButtonIconBagde } from "../../Atoms/ButtonIconBadge";
+import { DropDown } from "../../Atoms/ButtonDropdown";
 
 export function Notifications() {
     return (
-        <ButtonIconBagde value={120} icon={<FaRegBell />} />
+        <DropDown>
+            <DropDown.ButtonToggle icon={<FaRegBell />} />
+            hello cara
+        </DropDown>
     )
 }
