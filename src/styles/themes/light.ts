@@ -7,7 +7,9 @@ export default {
         secondary: '#4EA8DE',
         bgPrimary: '#f5f5f5',
         bgSecondary: '#f4f4f4',
-        bgDark: '#c2c2c2'
+        bgDark: '#c2c2c2',
+        white: '#fff',
+        red: '#ff0000'
     },
     fonts: {},
     buttons: {
@@ -18,6 +20,11 @@ export default {
                 color: "#222",
                 borderColor: "#04040533"
             }
+        }
+    },
+    icons: {
+        theme: {
+            color: "#000"
         }
     }
 } as DefaultTheme

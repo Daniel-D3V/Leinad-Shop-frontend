@@ -11,7 +11,7 @@ const nextConfig = {
   },
   pageExtensions: ["page.tsx", "ts", "tsx"],
   compiler: {
-    styledComponents: true
+    styledComponents: true,
   }
 }
 

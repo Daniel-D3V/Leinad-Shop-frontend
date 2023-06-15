@@ -8,7 +8,9 @@ declare module 'styled-components' {
             secondary: string,
             bgPrimary: string,
             bgSecondary: string,
-            bgDark: string
+            bgDark: string,
+            white: string,
+            red: string
         },
         fonts: {},
         buttons: {
@@ -19,7 +21,12 @@ declare module 'styled-components' {
                     color: string,
                     borderColor: string
                 }
-            }
+            },
         },
+        icons: {
+            theme: {
+                color: string
+            }
+        }
     }
 }

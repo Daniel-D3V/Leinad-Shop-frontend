@@ -1,8 +1,8 @@
-import { FiBell } from "react-icons/fi";
-import { ButtonIcon } from "../../Atoms/ButtonIcon";
+import { FaRegBell } from "react-icons/fa";
+import { ButtonIconBagde } from "../../Atoms/ButtonIconBadge";
 
 export function Notifications() {
     return (
-        <ButtonIcon icon={<FiBell />} />
+        <ButtonIconBagde value={120} icon={<FaRegBell />} />
     )
 }
