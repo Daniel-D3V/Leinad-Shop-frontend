@@ -13,7 +13,7 @@ export const Section = () => {
                 <Content>
                     <Title>Leinad Shop</Title>
                     <Description>A merketplace numero 🥇 de vendas do brasil e do mundo</Description>
-                    <Button>Como funciona?</Button>
+                    <Button>Conheça agora</Button>
                 </Content>
             </Container>
         </SectionStyled>
