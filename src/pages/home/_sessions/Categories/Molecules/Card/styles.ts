@@ -4,4 +4,8 @@ import { styled } from "styled-components";
 export const CardStyled = styled(Col)`
     display: flex;
     flex-direction: column;
+
+    img {
+        object-fit: cover;
+    }
 `
