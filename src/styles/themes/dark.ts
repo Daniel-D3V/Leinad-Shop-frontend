@@ -9,6 +9,7 @@ export default {
         bgSecondary: '#18181b',
         bgDark: '#0D0D0D',
         title: '#fafafa',
+        subtitle: '#C4C4C4',
         description: '#C4C4C4',
         white: '#fff',
         red: '#ff0000',
