@@ -5,7 +5,7 @@ export const TitleStyled = styled.p`
     font-size: 0.95rem;
     text-transform: uppercase;
     font-weight: 600;
-    color: ${props => props.theme.colors.subtitle};
+    color: ${props => props.theme.texts.subtitle};
     margin-bottom: 8px;
     transition: all .3s ease;
     cursor: pointer;
@@ -16,7 +16,7 @@ export const TitleStyled = styled.p`
     }
 
     &:hover {
-        color: ${props => props.theme.colors.title};
+        color: ${props => props.theme.texts.title};
 
         svg {
             margin-left: 0.3rem;

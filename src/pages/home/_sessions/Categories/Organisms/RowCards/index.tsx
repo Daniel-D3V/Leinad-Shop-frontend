@@ -1,11 +1,16 @@
+import { Card } from "../../Molecules/Card"
 import { RowCardStyled } from "./styles"
 
 type Props = {
-    children: React.ReactNode
+    categories: { title: string, imageURL: string }[]
 }
 
-export const RowCard = ({ children }: Props) => {
+export const RowCard = ({ categories }: Props) => {
     return (
-        <RowCardStyled>{children}</RowCardStyled>
+        <RowCardStyled>
+            {categories.map(category => (
+                <Card title={category.title} imageURL={category.imageURL} />
+            ))}
+        </RowCardStyled>
     )
 }

@@ -4,5 +4,5 @@ export const Direction = styled.div`
     display: flex;
     align-items: center;
     justify-content: left;
-    gap: 0.6rem;
+    gap: 2rem;
 `

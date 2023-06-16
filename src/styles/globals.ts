@@ -11,7 +11,7 @@ export default createGlobalStyle`
     }
 
     body {
-        background: ${props => props.theme.colors.bgPrimary};
+        background: ${props => props.theme.backgrounds.bgPrimary};
         font-size: 14px;
         color: #333;
         font-family: 'Poppins', sans-serif;

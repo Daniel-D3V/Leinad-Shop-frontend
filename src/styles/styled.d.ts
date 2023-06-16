@@ -6,14 +6,19 @@ declare module 'styled-components' {
         colors: {
             primary: string,
             secondary: string,
-            bgPrimary: string,
-            bgSecondary: string,
-            bgDark: string,
+            white: string,
+            red: string,
+            green: string
+        },
+        texts: {
             title: string,
             subtitle: string,
             description: string,
-            white: string,
-            red: string
+        },
+        backgrounds: {
+            bgPrimary: string,
+            bgSecondary: string,
+            bgDark: string,
         },
         fonts: {},
         buttons: {

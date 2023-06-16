@@ -5,14 +5,19 @@ export default {
     colors: {
         primary: '#1E6F9F',
         secondary: '#4EA8DE',
+        white: '#fff',
+        red: '#ff0000',
+        green: '#00ff00',
+    },
+    backgrounds: {
         bgPrimary: '#f5f5f5',
         bgSecondary: '#f4f4f4',
         bgDark: '#c2c2c2',
+    },
+    texts: {
         title: '#333',
         subtitle: '#040405ff',
         description: '#040405a6',
-        white: '#fff',
-        red: '#ff0000'
     },
     fonts: {},
     buttons: {

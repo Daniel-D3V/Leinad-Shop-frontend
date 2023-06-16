@@ -1,21 +1,12 @@
 import React from "react"
 import { SectionStyled } from "./styles"
-import { Container } from "../../Molecules/Container"
-import { Content } from "../../Molecules/Content"
-import { Title } from "../../Atoms/Title"
-import { Description } from "../../Atoms/Description"
-import { Button } from "../../Atoms/Button"
 
-export const Section = () => {
+type Props = {
+    children: React.ReactNode
+}
+
+export const Section = ({ children }: Props) => {
     return (
-        <SectionStyled>
-            <Container>
-                <Content>
-                    <Title>Leinad Shop</Title>
-                    <Description>A merketplace numero 🥇 de vendas do brasil e do mundo</Description>
-                    <Button>Conheça agora</Button>
-                </Content>
-            </Container>
-        </SectionStyled>
+        <SectionStyled>{children}</SectionStyled>
     )
 }

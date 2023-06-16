@@ -1,5 +1,5 @@
+import { Badge } from "@mui/material";
 import { ButtonIcon } from "../ButtonIcon";
-import { BadgeStyled, ButtonIconBagdeStyled } from "./styles";
 
 type Props = {
     value: number;
@@ -8,9 +8,8 @@ type Props = {
 
 export function ButtonIconBagde({ value, icon }: Props) {
     return (
-        <ButtonIconBagdeStyled>
+        <Badge badgeContent={value > 99 ? "+99" : value} color="primary">
             <ButtonIcon icon={icon} />
-            <BadgeStyled>{value > 99 ? "+99" : value}</BadgeStyled>
-        </ButtonIconBagdeStyled>
+        </Badge>
     )
 }

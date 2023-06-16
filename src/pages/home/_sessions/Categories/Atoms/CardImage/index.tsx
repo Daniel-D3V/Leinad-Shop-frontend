@@ -8,6 +8,6 @@ type Props = {
 
 export const CardImage = ({ title, imageURL }: Props) => {
     return (
-        <CardImageStyled src={imageURL} width={250} height={250} alt={title} />
+        <CardImageStyled src={imageURL} width={1080} height={1080} alt={title} />
     )
 }
