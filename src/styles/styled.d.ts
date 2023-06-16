@@ -20,6 +20,9 @@ declare module 'styled-components' {
             bgSecondary: string,
             bgDark: string,
         },
+        dropshadows: {
+            secondary: string
+        },
         fonts: {},
         buttons: {
             primary: {

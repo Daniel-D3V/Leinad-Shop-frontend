@@ -15,8 +15,8 @@ export const CardStyled = styled(Col)`
     &:hover {
         img {
             margin-top: -5px;
-            border-color: ${props => props.theme.colors.primary};
             filter: brightness(120%);
+            box-shadow: ${props => props.theme.dropshadows.secondary} 0px 0px 0px 3px;
         }
     }
 `

@@ -14,6 +14,9 @@ export default {
         bgSecondary: '#f4f4f4',
         bgDark: '#c2c2c2',
     },
+    dropshadows: {
+        secondary: "#fff"
+    },
     texts: {
         title: '#333',
         subtitle: '#040405ff',

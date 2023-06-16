@@ -17,7 +17,7 @@ export const OnlineIconStyled = styled.span`
     border-radius: 50%;
     right: 0;
     bottom: 0;
-    box-shadow: 0 0 0 2px ${props => props.theme.colors.bgPrimary};
+    box-shadow: 0 0 0 2px ${props => props.theme.backgrounds.bgPrimary};
 
     &::after {
         position: 'absolute';
