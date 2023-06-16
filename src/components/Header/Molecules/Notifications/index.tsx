@@ -6,7 +6,7 @@ export function Notifications() {
     return (
         <DropDown>
             <DropDown.ButtonToggle icon={<FaRegBell />} />
-            hello cara
+            {/* <DropDown.Content>Hello</DropDown.Content> */}
         </DropDown>
     )
 }

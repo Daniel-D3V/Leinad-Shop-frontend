@@ -8,11 +8,20 @@ export default {
         bgPrimary: '#0c0c0d',
         bgSecondary: '#18181b',
         bgDark: '#0D0D0D',
+        title: '#fafafa',
+        description: '#C4C4C4',
         white: '#fff',
         red: '#ff0000',
     },
     fonts: {},
     buttons: {
+        primary: {
+            color: '#fff',
+            background: '#007bff',
+            hover: {
+                background: '#007b22'
+            }
+        },
         outline: {
             color: "#999",
             borderColor: "#ffffff1a",

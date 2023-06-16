@@ -16,12 +16,13 @@ const DropDown = ({ children }: Props) => {
 
     return (
         <DropDownStyled onClick={() => { setActive(!active) }}>
-            <DropDown.ButtonToggle onClick={handleButtonClick} />
-            <Content active={active}>{children}</Content>
+            <DropDown.ButtonToggle onClick={handleButtonClick} icon={DropDown.ButtonToggle} />
+            {/* <DropDown.Content active={active}>{children}</DropDown.Content> */}
         </DropDownStyled>
     )
 }
 
 DropDown.ButtonToggle = ButtonIconToggle;
+DropDown.Content = Content;
 
 export { DropDown };

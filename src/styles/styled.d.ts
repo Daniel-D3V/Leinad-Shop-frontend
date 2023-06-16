@@ -9,11 +9,20 @@ declare module 'styled-components' {
             bgPrimary: string,
             bgSecondary: string,
             bgDark: string,
+            title: string,
+            description: string,
             white: string,
             red: string
         },
         fonts: {},
         buttons: {
+            primary: {
+                color: string,
+                background: string,
+                hover: {
+                    background: string
+                }
+            },
             outline: {
                 color: string,
                 borderColor: string
