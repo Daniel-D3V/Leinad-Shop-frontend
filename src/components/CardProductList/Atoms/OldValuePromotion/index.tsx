@@ -6,6 +6,8 @@ type Props = {
 
 export const OldValuePromotion = ({ value }: Props) => {
     return (
-        <OldValuePromotionStyled>R${value.toFixed(2)}</OldValuePromotionStyled>
+        <OldValuePromotionStyled active={value > 0}>
+            {value > 0 && `R${value.toFixed(2)}`}
+        </OldValuePromotionStyled>
     )
 }

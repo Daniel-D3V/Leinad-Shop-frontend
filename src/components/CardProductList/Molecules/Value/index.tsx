@@ -14,7 +14,7 @@ type Props = {
 export const Value = ({ price, promotion }: Props) => {
     return (
         <ValueStyled>
-            {promotion && (<OldValuePromotion value={promotion?.old_value} />)}
+            <OldValuePromotion value={promotion?.old_value ?? 0} />
             <Price value={promotion ? promotion.value : price} />
         </ValueStyled>
     )
