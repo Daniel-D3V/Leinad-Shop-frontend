@@ -17,10 +17,12 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     const [theme, setTheme] = usePersistedState<ThemeOptions>("theme", "light");
 
     return (
-        <ThemeProviderStyled theme={theme === "dark" ? dark : light}>
-            {children}
+        <ThemeProviderContext.Provider value={{ theme, setTheme }}>
+            <ThemeProviderStyled theme={theme === "dark" ? dark : light}>
+                {children}
 
-            <button onClick={() => { setTheme(theme === "light" ? "dark" : "light") }}>{theme}</button>
-        </ThemeProviderStyled>
+                <button onClick={() => { setTheme(theme === "light" ? "dark" : "light") }}>{theme}</button>
+            </ThemeProviderStyled>
+        </ThemeProviderContext.Provider>
     )
 }

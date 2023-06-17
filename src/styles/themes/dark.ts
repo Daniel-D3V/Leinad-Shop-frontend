@@ -28,7 +28,7 @@ export default {
             color: '#fff',
             background: '#007bff',
             hover: {
-                background: '#007b22'
+                background: '#4aa1ff'
             }
         },
         outline: {

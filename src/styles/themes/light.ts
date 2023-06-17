@@ -10,7 +10,7 @@ export default {
         green: '#00ff00',
     },
     backgrounds: {
-        bgPrimary: '#f5f5f5',
+        bgPrimary: '#fff',
         bgSecondary: '#f4f4f4',
         bgDark: '#c2c2c2',
     },
@@ -28,7 +28,7 @@ export default {
             color: '#fff',
             background: '#007bff',
             hover: {
-                background: '#007b22'
+                background: '#4aa1ff'
             }
         },
         outline: {

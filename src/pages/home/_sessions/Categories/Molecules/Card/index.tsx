@@ -9,7 +9,7 @@ type Props = {
 
 export const Card = ({ title, imageURL }: Props) => {
     return (
-        <CardStyled md={2}>
+        <CardStyled lg={2}>
             <CardImage imageURL={imageURL} title={title} />
             <CardTitle title={title} />
         </CardStyled>
