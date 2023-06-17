@@ -6,4 +6,5 @@ export const TitleStyled = styled.p`
     font-weight: 500;
     line-height: 130%;
     margin-bottom: 7px;
+    min-height: 38px;
 `

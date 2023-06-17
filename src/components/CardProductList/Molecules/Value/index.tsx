@@ -1,5 +1,6 @@
 import { OldValuePromotion } from "../../Atoms/OldValuePromotion"
 import { Price } from "../../Atoms/Price"
+import { Promotion } from "../Promotion"
 import { ValueStyled } from "./styles"
 
 type Props = {
@@ -14,7 +15,7 @@ type Props = {
 export const Value = ({ price, promotion }: Props) => {
     return (
         <ValueStyled>
-            <OldValuePromotion value={promotion?.old_value ?? 0} />
+            <Promotion promotion={promotion} />
             <Price value={promotion ? promotion.value : price} />
         </ValueStyled>
     )

@@ -60,7 +60,7 @@ export const ListCardProduct = () => {
             product_type: "AUTO",
         },
         {
-            title: "Conta valorant full acesso com premium ativo e tudo desbloqueado no jogo",
+            title: "Conta valoro",
             price: 25,
             customer: {
                 username: "Reth das conta",
