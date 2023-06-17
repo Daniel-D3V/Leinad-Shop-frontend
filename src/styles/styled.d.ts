@@ -14,6 +14,8 @@ declare module 'styled-components' {
             title: string,
             subtitle: string,
             description: string,
+            price: string,
+            subprice: string
         },
         backgrounds: {
             bgPrimary: string,
@@ -22,6 +24,12 @@ declare module 'styled-components' {
         },
         dropshadows: {
             secondary: string
+        },
+        borders: {
+            secondary: {
+                color: string,
+                hover: string
+            }
         },
         fonts: {},
         buttons: {

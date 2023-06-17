@@ -11,16 +11,24 @@ export default {
     },
     backgrounds: {
         bgPrimary: '#fff',
-        bgSecondary: '#f4f4f4',
+        bgSecondary: '#fff',
         bgDark: '#c2c2c2',
     },
     dropshadows: {
         secondary: "#fff"
     },
+    borders: {
+        secondary: {
+            color: '#DEDEDE',
+            hover: '#c2c2c2'
+        }
+    },
     texts: {
         title: '#333',
         subtitle: '#040405ff',
         description: '#040405a6',
+        price: '#010101',
+        subprice: '#040405a6'
     },
     fonts: {},
     buttons: {

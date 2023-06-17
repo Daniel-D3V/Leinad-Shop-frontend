@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { CustomerStyled } from "./styles";
 import { Title } from "../../Atoms/Title";
 import { CustomerUsername } from "../../Atoms/Customer/Username";
-import { CustomerAvatar } from "../../Atoms/Customer/Avatar";
+import { CustomerTitle } from "../../Atoms/Customer/Title";
 
 type Props = {
     username: string,
@@ -12,7 +12,7 @@ type Props = {
 export const Customer = ({ username, avatarURL }: Props) => {
     return (
         <CustomerStyled>
-            <CustomerAvatar username={username} avatarURL={avatarURL} />
+            <CustomerTitle title="Vendido por:" />
             <CustomerUsername username={username} />
         </CustomerStyled>
     )

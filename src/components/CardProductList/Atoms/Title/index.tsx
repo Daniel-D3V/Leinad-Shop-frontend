@@ -6,6 +6,8 @@ type Props = {
 
 export const Title = ({ title }: Props) => {
     return (
-        <TitleStyled>{title}</TitleStyled>
+        <TitleStyled title={title}>
+            {title.length > 63 ? title.slice(0, 63) + '...' : title}
+        </TitleStyled>
     )
 }
