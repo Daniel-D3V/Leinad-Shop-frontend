@@ -8,8 +8,8 @@ type Props = {
 export const RowCards = ({ products }: Props) => {
     return (
         <RowCardStyled>
-            {products.map((product) => (
-                <CardProduct {...product} />
+            {products.map((product, index) => (
+                <CardProduct {...product} key={index} />
             ))}
         </RowCardStyled>
     )

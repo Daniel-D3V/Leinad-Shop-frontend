@@ -5,5 +5,7 @@ type Props = {
 }
 
 export const Icon = ({ icon }: Props) => {
-    <IconStyled>{icon}</IconStyled>
+    return (
+        <IconStyled>{icon}</IconStyled>
+    )
 }

@@ -26,7 +26,7 @@ export default {
     texts: {
         title: '#fafafa',
         subtitle: '#C4C4C4',
-        description: '#C4C4C4',
+        description: '#A1A1A1',
         price: '#e9e9e9',
         subprice: '#A1A1A1'
     },

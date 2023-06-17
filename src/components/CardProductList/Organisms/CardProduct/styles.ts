@@ -1,12 +1,12 @@
 import { Col } from "react-bootstrap";
 import { styled } from "styled-components";
 
-export const ColCardProductStyles = styled(Col)`
+export const ColCardProductStyled = styled(Col)`
     /* color: black; */
     margin-bottom: 20px;
 `
 
-export const CardProductStyles = styled.div`
+export const CardProductStyled = styled.div`
     padding: 15px;
     border-radius: 8px;
     display: flex;

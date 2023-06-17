@@ -9,7 +9,7 @@ type Props = {
 export const CardPromotion = ({ children }: Props) => {
     return (
         <CardPormotionStyled >
-            <CardPromotionDescription children={children} />
+            <CardPromotionDescription>{children}</CardPromotionDescription>
             <CardPromotionButton />
         </CardPormotionStyled>
     )

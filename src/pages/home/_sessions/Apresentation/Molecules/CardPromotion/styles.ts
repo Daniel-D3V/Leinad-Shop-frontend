@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const CardPormotionStyled = styled.div`
     margin-top: 40px;
-    background: ${props => props.theme.colors.bgSecondary};
+    background: ${props => props.theme.backgrounds.bgSecondary};
     border-radius: 50px;
     display: flex;
     align-items: center;
