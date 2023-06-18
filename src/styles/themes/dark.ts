@@ -18,6 +18,10 @@ export default {
         secondary: "#0404051a"
     },
     borders: {
+        primary: {
+            color: '#252528',
+            hover: '#2D2D2F'
+        },
         secondary: {
             color: '#1A1A1C',
             hover: '#2D2D2F'

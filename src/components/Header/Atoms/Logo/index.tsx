@@ -7,6 +7,6 @@ export function Logo() {
     const { theme } = useContext(ThemeProviderContext)
 
     return (
-        <Image src={`/themes/${theme}/logo.png`} width={50} height={50} alt="Leinad Shop" />
+        <Image src={`/themes/${theme}/logo.svg`} width={50} height={50} alt="Leinad Shop" />
     )
 }

@@ -20,8 +20,6 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
         <ThemeProviderContext.Provider value={{ theme, setTheme }}>
             <ThemeProviderStyled theme={theme === "dark" ? dark : light}>
                 {children}
-
-                <button onClick={() => { setTheme(theme === "light" ? "dark" : "light") }}>{theme}</button>
             </ThemeProviderStyled>
         </ThemeProviderContext.Provider>
     )

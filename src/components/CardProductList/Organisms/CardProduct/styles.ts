@@ -18,6 +18,7 @@ export const CardProductStyled = styled.div`
 
     &:hover {
         border-color: ${props => props.theme.borders.secondary.hover};
+        box-shadow: 0 0 0 1.5px ${props => props.theme.borders.secondary.hover};
         transform: translateY(-3%);
     }
 `

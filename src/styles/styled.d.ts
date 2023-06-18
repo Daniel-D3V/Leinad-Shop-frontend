@@ -26,6 +26,10 @@ declare module 'styled-components' {
             secondary: string
         },
         borders: {
+            primary: {
+                color: string,
+                hover: string
+            }
             secondary: {
                 color: string,
                 hover: string
