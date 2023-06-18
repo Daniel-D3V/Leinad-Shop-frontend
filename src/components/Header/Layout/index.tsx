@@ -1,5 +1,5 @@
 import { Container } from "../Organisms/Container";
-import { Logo } from "../Organisms/Logo";
+import { Logo } from "../Molecules/Logo";
 import { Options } from "../Organisms/Options";
 import { Header as HeaderStyled } from './styles'
 

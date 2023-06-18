@@ -12,7 +12,7 @@ const nextConfig = {
   images: {
     domains: ["cdn.discordapp.com"]
   },
-  pageExtensions: ["page.tsx", "ts", "tsx"],
+  pageExtensions: ["page.tsx", "ts"],
   compiler: {
     styledComponents: true,
   }
