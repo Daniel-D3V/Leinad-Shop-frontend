@@ -4,8 +4,10 @@ import { Title } from "../../Atoms/Title"
 import { Customer } from "../../Molecules/Customer"
 import { Value } from "../../Molecules/Value"
 import { CardProductStyled, ColCardProductStyled } from "./styles"
+import { useRouter } from 'next/router';
 
 export type CardProductProps = {
+    id: string,
     title: string,
     price: number,
     customer: {
@@ -22,9 +24,16 @@ export type CardProductProps = {
 }
 
 export const CardProduct = (product: CardProductProps) => {
+
+    const { push } = useRouter();
+
+    const redirectPage = () => {
+        push(`/announcement/${product.id}`)
+    }
+
     return (
         <ColCardProductStyled md={3}>
-            <CardProductStyled>
+            <CardProductStyled onClick={redirectPage}>
                 <Image title={product.title} imageURL={product.imageURL} />
                 <Title title={product.title} />
                 <Value price={product.price} promotion={product.promotion} />

@@ -5,6 +5,7 @@ export const ListCardProduct = () => {
 
     const products: CardProductProps[] = [
         {
+            id: "1231231312313",
             title: "Conta valorant full acesso com premium ativo e tudo desbloqueado no jogo",
             price: 25,
             customer: {
@@ -20,6 +21,7 @@ export const ListCardProduct = () => {
             product_type: "AUTO",
         },
         {
+            id: "1231231312313",
             title: "Conta valorant full acesso com premium ativo e tudo desbloqueado no jogo",
             price: 25,
             customer: {
@@ -35,6 +37,7 @@ export const ListCardProduct = () => {
             product_type: "AUTO",
         },
         {
+            id: "1231231312313",
             title: "Conta valorant full acesso com premium ativo e tudo desbloqueado no jogo",
             price: 25,
             customer: {
@@ -50,6 +53,7 @@ export const ListCardProduct = () => {
             product_type: "AUTO",
         },
         {
+            id: "1231231312313",
             title: "Conta valorant full acesso com premium ativo e tudo desbloqueado no jogo",
             price: 25,
             customer: {
@@ -60,6 +64,7 @@ export const ListCardProduct = () => {
             product_type: "AUTO",
         },
         {
+            id: "1231231312313",
             title: "Conta valoro",
             price: 25,
             customer: {
@@ -75,6 +80,7 @@ export const ListCardProduct = () => {
             product_type: "AUTO",
         },
         {
+            id: "1231231312313",
             title: "Conta valorant full acesso com premium ativo e tudo desbloqueado no jogo",
             price: 25,
             customer: {
@@ -85,6 +91,7 @@ export const ListCardProduct = () => {
             product_type: "AUTO",
         },
         {
+            id: "1231231312313",
             title: "Conta valorant full acesso com premium ativo e tudo desbloqueado no jogo",
             price: 25,
             customer: {
