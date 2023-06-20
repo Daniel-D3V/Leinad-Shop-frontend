@@ -1,11 +1,10 @@
 import { RowCards } from "../Molecules/RowCards"
+import { StatisticsCards } from "../Organisms/StatisticsCards"
 
 export const DashboardHomeLayout = () => {
     return (
         <>
-            <RowCards>
-                aq
-            </RowCards>
+            <StatisticsCards />
             <RowCards>
                 aq
             </RowCards>
