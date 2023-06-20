@@ -3,7 +3,7 @@ import { DefaultTheme } from 'styled-components';
 export default {
     title: 'dark',
     colors: {
-        primary: '#1E6F9F',
+        primary: '#007bff',
         secondary: '#4EA8DE',
         white: '#fff',
         red: '#ff0000',
@@ -12,7 +12,7 @@ export default {
     backgrounds: {
         bgPrimary: '#0c0c0d',
         bgSecondary: '#121214',
-        bgDark: '#0D0D0D',
+        bgDark: '#1e1e21',
     },
     dropshadows: {
         secondary: "#0404051a"

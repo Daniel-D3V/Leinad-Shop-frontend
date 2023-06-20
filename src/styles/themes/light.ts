@@ -12,7 +12,7 @@ export default {
     backgrounds: {
         bgPrimary: '#fff',
         bgSecondary: '#fff',
-        bgDark: '#c2c2c2',
+        bgDark: '#fff',
     },
     dropshadows: {
         secondary: "#fff"

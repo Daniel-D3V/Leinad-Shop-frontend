@@ -7,6 +7,10 @@ const nextConfig = {
         source: '/',
         destination: '/home',
       },
+      {
+        source: '/dashboard',
+        destination: '/dashboard/main'
+      }
     ]
   },
   images: {

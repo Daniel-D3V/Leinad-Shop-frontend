@@ -21,6 +21,8 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
             <ThemeProviderStyled theme={theme === "dark" ? dark : light}>
                 {children}
             </ThemeProviderStyled>
+
+            <button onClick={() => { setTheme(theme === "dark" ? "light" : "dark") }}>{theme}</button>
         </ThemeProviderContext.Provider>
     )
 }

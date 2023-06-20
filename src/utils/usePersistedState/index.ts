@@ -1,11 +1,11 @@
-import { Dispatch, SetStateAction, useLayoutEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 type Response<T> = [T, Dispatch<SetStateAction<T>>];
 
 export default function usePersistedState<T = any>(key: string, initialState: T): Response<T> {
     const [state, setState] = useState(initialState);
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         setState(() => {
             const storageValue = localStorage.getItem(key);
             if (storageValue) return JSON.parse(storageValue)
