@@ -1,7 +1,8 @@
 import { styled } from "styled-components";
 
 interface ItemMenuStyledProps {
-    selected: boolean
+    selected?: boolean
+    isDanger?: boolean
 }
 
 export const ItemMenuStyled = styled.li<ItemMenuStyledProps>`
@@ -26,5 +27,9 @@ export const ItemMenuStyled = styled.li<ItemMenuStyledProps>`
     ${props => props.selected && `
         background: ${props.theme.colors.primary};
         color: ${props.theme.colors.white};
+    `}
+
+    ${props => props.isDanger && `
+        color: ${props.theme.colors.red};
     `}
 `

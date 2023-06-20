@@ -3,7 +3,7 @@ import { BsFillBoxFill } from "react-icons/bs"
 import { SideBarStyled } from "./styles"
 import { GroupListMenu, GroupsList } from "../Organisms/GroupListMenu"
 import { AiFillInfoCircle } from "react-icons/ai"
-import { MdPrivacyTip } from 'react-icons/md';
+import { MdLogout, MdPrivacyTip } from 'react-icons/md';
 
 type Props = {
     selected: number
@@ -17,23 +17,19 @@ export const SideBar = ({ selected }: Props) => {
             itemsMenu: [
                 {
                     icon: <FaUserAlt />,
-                    content: "Resumo geral",
-                    selected: false
+                    content: "Resumo geral"
                 },
                 {
                     icon: <BsFillBoxFill />,
-                    content: "Meus anúncios",
-                    selected: false
+                    content: "Meus anúncios"
                 },
                 {
                     icon: <FaShoppingBasket />,
-                    content: "Minhas vendas",
-                    selected: false
+                    content: "Minhas vendas"
                 },
                 {
                     icon: <FaMoneyBill />,
-                    content: "Minhas compras",
-                    selected: false
+                    content: "Minhas compras"
                 }
             ]
         },
@@ -42,23 +38,24 @@ export const SideBar = ({ selected }: Props) => {
             itemsMenu: [
                 {
                     icon: <FaUserAlt />,
-                    content: "Minha conta",
-                    selected: false
+                    content: "Minha conta"
                 },
                 {
                     icon: <AiFillInfoCircle />,
-                    content: "Informações",
-                    selected: false
+                    content: "Informações"
                 },
                 {
                     icon: <MdPrivacyTip />,
-                    content: "Privacidade",
-                    selected: false
+                    content: "Privacidade"
                 },
                 {
                     icon: <FaLock />,
-                    content: "Segurança",
-                    selected: false
+                    content: "Segurança"
+                },
+                {
+                    icon: <MdLogout />,
+                    content: "Sair",
+                    isDanger: true
                 }
             ]
         }
