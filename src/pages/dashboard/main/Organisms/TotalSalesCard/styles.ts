@@ -12,6 +12,6 @@ export const TotalSalesCardStyled = styled.div`
     gap: 1.2rem;
     background: ${props => props.theme.backgrounds.bgDark};
     border: 1px solid ${props => props.theme.borders.primary.color};
-    padding: 20px 10px;
+    padding: 10px;
     border-radius: 5px;
 `
