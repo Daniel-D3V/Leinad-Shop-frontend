@@ -6,7 +6,6 @@ type Props = {
 
 export const TotalSalesCardDetailsValue = ({ value }: Props) => {
     return (
-        <TotalSalesCardDetailsValueStyled>R${value.toFixed(2)}
-        </TotalSalesCardDetailsValueStyled>
+        <TotalSalesCardDetailsValueStyled>R${value.toFixed(2)}</TotalSalesCardDetailsValueStyled>
     )
 }

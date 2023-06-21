@@ -1,4 +1,5 @@
-import { TotalSalesCardDetailsTitleStyled } from "./styles";
+import { TotalSalesCardDetailsTimeStyled, TotalSalesCardDetailsTitleStyled } from "./styles";
+import TimeAgo from 'react-timeago';
 
 type Props = {
     time: Date,
@@ -6,6 +7,9 @@ type Props = {
 
 export const TotalSalesCardDetailsTitle = ({ time }: Props) => {
     return (
-        <TotalSalesCardDetailsTitleStyled>Ganhos totais <small>({time.toLocaleDateString()})</small></TotalSalesCardDetailsTitleStyled>
+        <TotalSalesCardDetailsTitleStyled>
+            Ganhos totais
+            <TotalSalesCardDetailsTimeStyled>(<TimeAgo date={time}></TimeAgo>)</TotalSalesCardDetailsTimeStyled>
+        </TotalSalesCardDetailsTitleStyled>
     )
 }
