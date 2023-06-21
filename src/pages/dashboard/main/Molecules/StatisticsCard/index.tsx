@@ -6,15 +6,16 @@ import { Col } from "react-bootstrap"
 type Props = {
     icon: any,
     title: string,
-    value: number
+    value: number,
+    type?: "number" | "price"
 }
 
-export const StatisticsCard = ({ icon, title, value }: Props) => {
+export const StatisticsCard = ({ icon, title, value, type }: Props) => {
     return (
         <Col md={4}>
             <StatisticsCardStyled>
                 <StatisticsCardIcon icon={icon} />
-                <StatisticsCardDetails title={title} value={value} />
+                <StatisticsCardDetails title={title} value={value} type={type} />
             </StatisticsCardStyled>
         </Col>
     )

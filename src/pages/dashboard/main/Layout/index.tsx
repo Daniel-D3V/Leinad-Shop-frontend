@@ -1,16 +1,15 @@
 import { RowCards } from "../Molecules/RowCards"
 import { StatisticsCards } from "../Organisms/StatisticsCards"
+import { TotalSalesCard } from "../Organisms/TotalSalesCard"
 
 export const DashboardHomeLayout = () => {
     return (
         <>
             <StatisticsCards />
-            <RowCards>
+            <TotalSalesCard />
+            {/* <RowCards>
                 aq
-            </RowCards>
-            <RowCards>
-                aq
-            </RowCards>
+            </RowCards> */}
         </>
     )
 }
