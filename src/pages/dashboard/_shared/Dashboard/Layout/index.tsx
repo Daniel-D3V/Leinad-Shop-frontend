@@ -2,8 +2,8 @@ import { Col, Row } from "react-bootstrap"
 import { SideBar } from "../../SideBar/Layout"
 import { DashboardStyled } from "./styles"
 import { Container } from "../Organisms/Container"
-import { Header } from "@/components/Header/Layout"
 import { Footer } from "@/components/Footer/Layout"
+import { Navbar } from "@/components/Navbar/Layout"
 
 type Props = {
     children: React.ReactNode,
@@ -13,7 +13,7 @@ type Props = {
 export const Dashboard = ({ children, selected }: Props) => {
     return (
         <>
-            <Header />
+            <Navbar />
             <DashboardStyled>
                 <Container>
                     <Row>
