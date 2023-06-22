@@ -1,9 +1,14 @@
+import Link from "next/link";
 import { styled } from "styled-components";
 
 interface ItemMenuStyledProps {
     selected?: boolean
     isDanger?: boolean
 }
+
+export const ItemMenuLinkStyled = styled(Link)`
+    text-decoration: none;
+`
 
 export const ItemMenuStyled = styled.li<ItemMenuStyledProps>`
     width: 100%;

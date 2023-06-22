@@ -17,11 +17,13 @@ export const SideBar = ({ selected }: Props) => {
             itemsMenu: [
                 {
                     icon: <FaUserAlt />,
-                    content: "Resumo geral"
+                    content: "Resumo geral",
+                    redirectURL: "/dashboard"
                 },
                 {
                     icon: <BsFillBoxFill />,
-                    content: "Meus anúncios"
+                    content: "Meus anúncios",
+                    redirectURL: "/dashboard/annoucements"
                 },
                 {
                     icon: <FaShoppingBasket />,

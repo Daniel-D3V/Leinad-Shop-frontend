@@ -1,5 +1,4 @@
-import Link from "next/link"
-import { ItemMenuStyled } from "./styles"
+import { ItemMenuStyled, ItemMenuLinkStyled } from "./styles"
 
 export type ItemMenuProps = {
     icon: any,
@@ -11,6 +10,8 @@ export type ItemMenuProps = {
 
 export const ItemMenu = ({ icon, content, selected, isDanger, redirectURL }: ItemMenuProps) => {
     return (
-        <ItemMenuStyled selected={selected} isDanger={isDanger}>{icon} {content}</ItemMenuStyled>
+        <ItemMenuLinkStyled href={redirectURL ?? "/dashboard"}>
+            <ItemMenuStyled selected={selected} isDanger={isDanger}>{icon} {content}</ItemMenuStyled>
+        </ItemMenuLinkStyled>
     )
 }

@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <EventProvider>
       <ThemeProvider>
         <GlobalStyle />
-        <NextNProgress color="#29D" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={false} />
+        <NextNProgress color="#007bff" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={false} />
         <Component {...pageProps} />
       </ThemeProvider>
     </EventProvider>
