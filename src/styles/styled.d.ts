@@ -8,7 +8,8 @@ declare module 'styled-components' {
             secondary: string,
             white: string,
             red: string,
-            green: string
+            green: string,
+            purple: string
         },
         texts: {
             title: string,
@@ -16,6 +17,12 @@ declare module 'styled-components' {
             description: string,
             price: string,
             subprice: string
+        },
+        bagdge: {
+            yellow: {
+                color: string,
+                background: string
+            }
         },
         backgrounds: {
             bgPrimary: string,

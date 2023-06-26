@@ -8,6 +8,7 @@ export default {
         white: '#fff',
         red: '#ff0000',
         green: '#00ff00',
+        purple: '#6a3ce2'
     },
     backgrounds: {
         bgPrimary: '#fff',
@@ -16,6 +17,12 @@ export default {
     },
     dropshadows: {
         secondary: "#fff"
+    },
+    bagdge: {
+        yellow: {
+            color: '#e1b538',
+            background: '#fff'
+        },
     },
     borders: {
         primary: {
