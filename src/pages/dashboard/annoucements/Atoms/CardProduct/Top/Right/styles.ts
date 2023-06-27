@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
-export const CardProductBottomLeftStyled = styled.div`
+export const CardProductTopRightStyled = styled.div`
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: end;
 `

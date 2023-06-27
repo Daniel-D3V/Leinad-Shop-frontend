@@ -6,6 +6,6 @@ type Props = {
 
 export const CardProductDetailsId = ({ id }: Props) => {
     return (
-        <CardProductDetailsIdStyled>{id}</CardProductDetailsIdStyled>
+        <CardProductDetailsIdStyled>#{id}</CardProductDetailsIdStyled>
     )
 }

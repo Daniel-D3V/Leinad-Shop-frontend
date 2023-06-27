@@ -11,8 +11,8 @@ export default {
         purple: '#6a3ce2'
     },
     backgrounds: {
-        bgPrimary: '#0c0c0d',
-        bgSecondary: '#121214',
+        bgPrimary: '#121214',
+        bgSecondary: '#0B0B0D',
         bgDark: '#1D1D20',
     },
     dropshadows: {
