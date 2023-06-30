@@ -5,7 +5,7 @@ export const DashboardAnnoucementsLayout = () => {
     return (
         <>
             <Header>
-                <Header.Title title="Meus anúncios" />
+                <Header.Title>Meus anúncios</Header.Title>
             </Header>
             <RowCards />
         </>

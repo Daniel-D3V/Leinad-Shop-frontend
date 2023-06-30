@@ -40,11 +40,13 @@ export const SideBar = ({ selected }: Props) => {
             itemsMenu: [
                 {
                     icon: <FaUserAlt />,
-                    content: "Minha conta"
+                    content: "Minha conta",
+                    redirectURL: "/dashboard/account"
                 },
                 {
                     icon: <AiFillInfoCircle />,
-                    content: "Informações"
+                    content: "Informações",
+                    redirectURL: "/dashboard/information"
                 },
                 {
                     icon: <MdPrivacyTip />,

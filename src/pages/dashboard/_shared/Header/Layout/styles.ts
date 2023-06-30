@@ -1,6 +1,25 @@
 import { styled } from "styled-components";
 
-export const HeaderStyled = styled.header`
+type HeaderStyledProps = {
+    direction: "left" | "center" | "right"
+}
+
+export const HeaderStyled = styled.header<HeaderStyledProps>`
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    ${props => props.direction === "left" && `
+        align-items: flex-start;
+    `};
+
+    ${props => props.direction === "center" && `
+        align-items: center;
+        text-align: center;
+    `};
+
+    ${props => props.direction === "right" && `
+        align-items: flex-end;
+    `};
 `

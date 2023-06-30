@@ -1,11 +1,11 @@
 import { TitleStyled } from "./styles"
 
 type Props = {
-    title: string;
+    children: React.ReactNode;
 }
 
-export const Title = ({ title }: Props) => {
+export const Title = ({ children }: Props) => {
     return (
-        <TitleStyled>{title}</TitleStyled>
+        <TitleStyled>{children}</TitleStyled>
     )
 }
