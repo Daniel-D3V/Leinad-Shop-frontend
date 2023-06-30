@@ -50,11 +50,13 @@ export const SideBar = ({ selected }: Props) => {
                 },
                 {
                     icon: <MdPrivacyTip />,
-                    content: "Privacidade"
+                    content: "Privacidade",
+                    redirectURL: "/dashboard/privacity"
                 },
                 {
                     icon: <FaLock />,
-                    content: "Segurança"
+                    content: "Segurança",
+                    redirectURL: "/dashboard/security"
                 },
                 {
                     icon: <MdLogout />,

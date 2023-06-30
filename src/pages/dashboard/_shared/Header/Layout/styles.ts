@@ -8,7 +8,7 @@ export const HeaderStyled = styled.header<HeaderStyledProps>`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 
     ${props => props.direction === "left" && `
         align-items: flex-start;
