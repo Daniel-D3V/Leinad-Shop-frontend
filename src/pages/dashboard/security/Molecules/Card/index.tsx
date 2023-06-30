@@ -7,7 +7,7 @@ import Link from "next/link"
 export type CardProps = {
     icon: any,
     title: string,
-    description: string,
+    description?: string,
     redirectURL: string
 }
 

@@ -15,13 +15,11 @@ export const DashboardSecurityLayout = () => {
         },
         {
             title: "Alterar senha",
-            description: "",
             icon: <FaLock />,
             redirectURL: "/dashboard/security/change-password"
         },
         {
             title: "Dispositivos conectados",
-            description: "",
             icon: <FaLaptop />,
             redirectURL: "/dashboard/security/change-password"
         }

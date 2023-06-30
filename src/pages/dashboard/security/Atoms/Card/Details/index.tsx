@@ -4,14 +4,14 @@ import { CardDetailsStyled } from "./styles"
 
 type Props = {
     title: string,
-    description: string
+    description?: string
 }
 
 export const CardDetails = ({ title, description }: Props) => {
     return (
         <CardDetailsStyled>
             <CardDetailsTitle title={title} />
-            <CardDetailsDescription description={description} />
+            {description && (<CardDetailsDescription description={description} />)}
         </CardDetailsStyled>
     )
 }
