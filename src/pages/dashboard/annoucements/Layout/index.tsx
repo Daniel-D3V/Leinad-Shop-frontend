@@ -4,9 +4,9 @@ import { RowCards } from "../Organisms/RowCards"
 export const DashboardAnnoucementsLayout = () => {
     return (
         <>
-            <Header>
+            <Header.Root>
                 <Header.Title>Meus anúncios</Header.Title>
-            </Header>
+            </Header.Root>
             <RowCards />
         </>
     )

@@ -7,9 +7,9 @@ import { FormCard } from "../../_shared/Form/FormCard"
 export const DashboardAccountLayout = () => {
     return (
         <>
-            <Header>
+            <Header.Root>
                 <Header.Title>Minha conta</Header.Title>
-            </Header>
+            </Header.Root>
             <FormRow>
                 <FormCard md={6}>
                     <FormControl.Root>
@@ -24,21 +24,6 @@ export const DashboardAccountLayout = () => {
                     </FormControl.Root>
                 </FormCard>
             </FormRow >
-            <FormRow>
-                <FormCard md={6}>
-                    <FormControl.Root>
-                        <FormControl.Label htmlFor="password">Senha</FormControl.Label>
-                        <FormControl.InputPassword id="password" placeholder="Preencha o campo se for mudar" />
-                    </FormControl.Root>
-                </FormCard>
-                <FormCard md={6} direction="right">
-                    <FormControl.Root>
-                        <FormControl.Label htmlFor="confirmPassword">Confirmar Senha</FormControl.Label>
-                        <FormControl.InputPassword id="confirmPassword" placeholder="Preencha o campo se for mudar" />
-                    </FormControl.Root>
-                    <FormControl.Button>Alterar senha</FormControl.Button>
-                </FormCard>
-            </FormRow>
             <FormRow>
                 <FormCard md={12} direction="left">
                     <FormControl.Root>

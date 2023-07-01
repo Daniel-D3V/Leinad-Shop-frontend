@@ -27,9 +27,9 @@ export const DashboardSecurityLayout = () => {
 
     return (
         <>
-            <Header>
+            <Header.Root>
                 <Header.Title>Segurança</Header.Title>
-            </Header>
+            </Header.Root>
             <RowCards cards={cards} />
         </>
     )

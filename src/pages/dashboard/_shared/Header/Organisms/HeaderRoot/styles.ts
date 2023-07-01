@@ -1,10 +1,10 @@
 import { styled } from "styled-components";
 
-type HeaderStyledProps = {
+type HeaderRootStyledProps = {
     direction: "left" | "center" | "right"
 }
 
-export const HeaderStyled = styled.header<HeaderStyledProps>`
+export const HeaderRootStyled = styled.header<HeaderRootStyledProps>`
     display: flex;
     flex-direction: column;
     justify-content: center;

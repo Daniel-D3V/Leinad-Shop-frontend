@@ -1,19 +1,9 @@
 import { Description } from "../Atoms/Description"
 import { Title } from "../Atoms/Title"
-import { HeaderStyled } from "./styles"
+import { HeaderRoot } from "../Organisms/HeaderRoot"
 
-type Props = {
-    children: React.ReactNode,
-    direction?: "left" | "center" | "right"
+export const Header = {
+    Root: HeaderRoot,
+    Title: Title,
+    Description: Description
 }
-
-const Header = ({ children, direction = "left" }: Props) => {
-    return (
-        <HeaderStyled direction={direction}>{children}</HeaderStyled>
-    )
-}
-
-Header.Title = Title
-Header.Description = Description
-
-export { Header };

@@ -12,10 +12,10 @@ import { FormControlCountry } from "../../Molecules/FormControl/Contry"
 export const AddressSection = () => {
     return (
         <>
-            <Header direction="left">
+            <Header.Root>
                 <Header.Title>Endereço</Header.Title>
                 <Header.Description>Insira com atenção todas as informações que são solicitadas, uma vez alterada você não conseguirá modificar.</Header.Description>
-            </Header >
+            </Header.Root>
             <FormRow>
                 <FormCard md={9}>
                     <FormControlAdress />

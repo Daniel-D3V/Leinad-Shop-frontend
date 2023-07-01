@@ -9,10 +9,10 @@ import { FormControlDateOfBirth } from "../../Molecules/FormControl/DateOfBirth"
 export const InformationSection = () => {
     return (
         <>
-            <Header direction="left">
+            <Header.Root>
                 <Header.Title>Informações</Header.Title>
                 <Header.Description>Insira com atenção todas as informações que são solicitadas, uma vez enviadas você não conseguirá modificar. Essas informações são necessárias para você Verificar sua conta.</Header.Description>
-            </Header >
+            </Header.Root>
             <FormRow>
                 <FormCard md={6}>
                     <FormControlName />
