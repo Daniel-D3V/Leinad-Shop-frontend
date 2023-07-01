@@ -1,5 +1,5 @@
 import { Dashboard } from "../_shared/Dashboard/Layout";
-import { DashboardSecurityLayout } from "./Layout";
+import { DashboardSecurityLayout } from "./_root/Layout";
 
 export default function DashboardSecurity() {
     return (

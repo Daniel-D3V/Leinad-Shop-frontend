@@ -1,5 +1,5 @@
 import { FaLock, FaLaptop } from "react-icons/fa"
-import { Header } from "../../_shared/Header/Layout"
+import { Header } from "../../../_shared/Header/Layout"
 import { CardProps } from "../Molecules/Card"
 import { RowCards } from "../Organisms/RowCards"
 import { BsGoogle } from "react-icons/bs"
