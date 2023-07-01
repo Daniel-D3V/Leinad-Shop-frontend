@@ -10,17 +10,17 @@ export const DashboardSecurityLayout = () => {
         {
             title: "Authentificação em duas etapas (RECOMENDADO)",
             description: "Autenticação em duas etapas (2FA) é uma verificação de segurança adicional para sua conta, desenvolvida pelo Google.",
-            icon: <BsGoogle />,
+            icon: BsGoogle,
             redirectURL: "/dashboard/security/2fa"
         },
         {
             title: "Alterar senha",
-            icon: <FaLock />,
+            icon: FaLock,
             redirectURL: "/dashboard/security/change-password"
         },
         {
             title: "Dispositivos conectados",
-            icon: <FaLaptop />,
+            icon: FaLaptop,
             redirectURL: "/dashboard/security/change-password"
         }
     ]

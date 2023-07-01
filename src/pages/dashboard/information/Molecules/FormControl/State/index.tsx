@@ -35,10 +35,10 @@ export const FormControlState = () => {
 
     return (
         <>
-            <FormControl>
+            <FormControl.Root>
                 <FormControl.Label htmlFor="state" required={true}>Estado</FormControl.Label>
                 <FormControl.Select options={states} id="state" value="minasgerais" />
-            </FormControl>
+            </FormControl.Root>
         </>
     )
 }

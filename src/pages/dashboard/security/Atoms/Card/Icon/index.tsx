@@ -1,11 +1,14 @@
+import { ElementType } from "react"
 import { CardIconStyled } from "./styles"
 
 type Props = {
-    icon: any
+    icon: ElementType
 }
 
-export const CardIcon = ({ icon }: Props) => {
+export const CardIcon = ({ icon: Icon }: Props) => {
     return (
-        <CardIconStyled>{icon}</CardIconStyled>
+        <CardIconStyled>
+            <Icon />
+        </CardIconStyled>
     )
 }

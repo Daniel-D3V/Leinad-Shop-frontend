@@ -25,10 +25,10 @@ export const FormControlCountry = () => {
 
     return (
         <>
-            <FormControl>
+            <FormControl.Root>
                 <FormControl.Label htmlFor="country" required={true}>País</FormControl.Label>
                 <FormControl.Select options={countries} id="country" value="brazil" />
-            </FormControl>
+            </FormControl.Root>
         </>
     )
 }
