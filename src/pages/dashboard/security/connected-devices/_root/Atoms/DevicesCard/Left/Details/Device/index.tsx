@@ -1,6 +1,6 @@
 import { DevicesCardDeviceStyled } from "./styles"
 
-type DevicesCardDeviceProps = {
+export type DevicesCardDeviceProps = {
     system: "windows" | "linux" | "android" | "ios",
     application: "chrome" | "application"
 }

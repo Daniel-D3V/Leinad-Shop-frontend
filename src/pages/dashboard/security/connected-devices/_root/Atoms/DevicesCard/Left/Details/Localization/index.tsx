@@ -1,6 +1,6 @@
 import { DevicesCardLocalizationStyled } from "./styles"
 
-type DevicesCardLocalizationProps = {
+export type DevicesCardLocalizationProps = {
     city: string,
     state: string,
     contry: string
