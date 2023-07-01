@@ -1,5 +1,5 @@
 import { Dashboard } from "../_shared/Dashboard/Layout";
-import { DashboardAccountLayout } from "./Layout";
+import { DashboardAccountLayout } from "./_root/Layout";
 
 export default function DashboardAccount() {
     return (
