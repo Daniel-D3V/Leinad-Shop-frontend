@@ -21,7 +21,7 @@ export const DashboardSecurityLayout = () => {
         {
             title: "Dispositivos conectados",
             icon: FaLaptop,
-            redirectURL: "/dashboard/security/change-password"
+            redirectURL: "/dashboard/security/connected-devices"
         }
     ]
 

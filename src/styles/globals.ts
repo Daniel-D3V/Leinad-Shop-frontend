@@ -13,4 +13,14 @@ export default createGlobalStyle`
         color: #333;
         font-family: Poppins, sans-serif;
     }
+
+    a {
+        text-decoration: none;
+        color: ${props => props.theme.buttons.primary.background};
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: ${props => props.theme.buttons.primary.hover.background};
+        }
+    }
 `;
