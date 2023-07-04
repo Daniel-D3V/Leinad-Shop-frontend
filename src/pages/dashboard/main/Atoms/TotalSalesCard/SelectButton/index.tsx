@@ -1,6 +1,9 @@
+import { ButtonHTMLAttributes } from "react"
 import { TotalSalesCardSelectButtonStyled } from "./styles"
 
-export const TotalSalesCardSelectButton = () => {
+type TotalSalesCardSelectButtonProps = ButtonHTMLAttributes<HTMLButtonElement>
+
+export const TotalSalesCardSelectButton = (props: TotalSalesCardSelectButtonProps) => {
     return (
         <TotalSalesCardSelectButtonStyled>📅 Selecionar</TotalSalesCardSelectButtonStyled>
     )
