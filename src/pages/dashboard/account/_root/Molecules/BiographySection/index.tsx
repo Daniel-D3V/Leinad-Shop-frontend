@@ -12,8 +12,8 @@ export const BiographySection = () => {
         setDisabled(true)
 
         setTimeout(() => {
-            setDisabled(false);
             toast.success("Biografia atualizada com sucesso!")
+            setDisabled(false);
         }, 500);
     }
 
