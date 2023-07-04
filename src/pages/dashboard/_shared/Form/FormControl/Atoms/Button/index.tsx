@@ -1,10 +1,15 @@
 import { ButtonHTMLAttributes } from "react"
-import { ButtonStyled } from "./styles"
+import { ButtonStyled, ButtonSpinnerStyled } from "./styles"
 
-type Props = ButtonHTMLAttributes<HTMLButtonElement>
+type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
+    isLoading?: boolean
+}
 
 export const Button = (props: Props) => {
     return (
-        <ButtonStyled {...props} />
+        <ButtonStyled {...props} disabled={props.isLoading}>
+            {props.isLoading && (<ButtonSpinnerStyled />)}
+            {props.children}
+        </ButtonStyled>
     )
 }
