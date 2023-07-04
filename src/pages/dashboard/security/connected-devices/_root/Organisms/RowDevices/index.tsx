@@ -22,8 +22,8 @@ export const RowDevices = (props: RowDevicesProps) => {
             <RowDevicesGroup>
                 <RowDevicesTitle title="Outros dispositivos:" />
                 <RowDevicesGroupRow>
-                    {props.others.map(device => (
-                        <DevicesCard {...device} />
+                    {props.others.map((device, index) => (
+                        <DevicesCard {...device} key={index} />
                     ))}
                 </RowDevicesGroupRow>
             </RowDevicesGroup>

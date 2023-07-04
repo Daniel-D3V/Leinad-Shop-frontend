@@ -1,5 +1,5 @@
 import { TotalSalesCardDetailsTimeStyled, TotalSalesCardDetailsTitleStyled } from "./styles";
-import TimeAgo from 'react-timeago';
+import { TimeAgo } from '@/components/TimeAgo';
 
 type Props = {
     time: Date,

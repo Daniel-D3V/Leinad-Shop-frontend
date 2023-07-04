@@ -16,7 +16,7 @@ export const GroupListMenu = ({ groups }: Props) => {
     return (
         <>
             {groups.map((group, index) => (
-                <GroupListMenuStyled>
+                <GroupListMenuStyled key={index}>
                     <Title title={group.title} key={index} />
                     <MenuList itemsMenu={group.itemsMenu} key={index} />
                 </GroupListMenuStyled>
