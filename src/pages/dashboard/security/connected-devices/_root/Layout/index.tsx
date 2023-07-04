@@ -21,7 +21,8 @@ export const DashboardSecurityConnectedDevicesLayout = () => {
                 city: "Osasco",
                 system: "android",
                 application: "application",
-                device: "mobile"
+                device: "mobile",
+                date: new Date()
             },
             {
                 contry: "Brazil",
@@ -29,7 +30,8 @@ export const DashboardSecurityConnectedDevicesLayout = () => {
                 city: "Osasco",
                 system: "linux",
                 application: "chrome",
-                device: "laptop"
+                device: "laptop",
+                date: new Date()
             }
         ]
     }
