@@ -16,9 +16,14 @@ export const ThemeProviderContext = createContext<ThemeProviderContextProps>({} 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     const [theme, setTheme] = usePersistedState<ThemeOptions>("theme", "light");
 
+    const themes = {
+        light: light,
+        dark: dark
+    }
+
     return (
         <ThemeProviderContext.Provider value={{ theme, setTheme }}>
-            <ThemeProviderStyled theme={theme === "dark" ? dark : light}>
+            <ThemeProviderStyled theme={themes[theme]}>
                 {children}
             </ThemeProviderStyled>
 

@@ -5,6 +5,6 @@ type TotalSalesCardSelectButtonProps = ButtonHTMLAttributes<HTMLButtonElement>
 
 export const TotalSalesCardSelectButton = (props: TotalSalesCardSelectButtonProps) => {
     return (
-        <TotalSalesCardSelectButtonStyled>📅 Selecionar</TotalSalesCardSelectButtonStyled>
+        <TotalSalesCardSelectButtonStyled {...props}>📅 Selecionar</TotalSalesCardSelectButtonStyled>
     )
 }

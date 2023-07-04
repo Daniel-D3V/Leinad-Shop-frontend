@@ -4,17 +4,12 @@ import { TotalSalesCardSelectButton } from "../../Atoms/TotalSalesCard/SelectBut
 import { ColTotalSalesCardStyled, RowTotalSalesCardStyled, TotalSalesCardStyled } from "./styles"
 
 export const TotalSalesCard = () => {
-
-    const handleClick = () => {
-
-    }
-
     return (
         <RowTotalSalesCardStyled>
             <ColTotalSalesCardStyled md={12}>
                 <TotalSalesCardStyled>
                     <TotalSalesCardDetails time={new Date()} value={200} />
-                    <TotalSalesCardSelectButton onClick={handleClick} />
+                    <TotalSalesCardSelectButton />
                 </TotalSalesCardStyled>
             </ColTotalSalesCardStyled>
         </RowTotalSalesCardStyled>
