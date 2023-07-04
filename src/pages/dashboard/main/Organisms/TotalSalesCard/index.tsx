@@ -6,7 +6,7 @@ import { ColTotalSalesCardStyled, RowTotalSalesCardStyled, TotalSalesCardStyled 
 export const TotalSalesCard = () => {
 
     const handleClick = () => {
-        toast()
+
     }
 
     return (
