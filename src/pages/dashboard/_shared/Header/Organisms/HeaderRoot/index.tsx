@@ -6,7 +6,7 @@ type HeaderRootProps = {
     direction?: "left" | "center" | "right"
 }
 
-export const HeaderRoot = ({ children, direction }: HeaderRootProps) => {
+export const HeaderRoot = ({ children, direction = "left" }: HeaderRootProps) => {
     return (
         <HeaderRootStyled direction={direction}>{children}</HeaderRootStyled>
     )
