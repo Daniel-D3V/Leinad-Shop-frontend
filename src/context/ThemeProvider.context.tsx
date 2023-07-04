@@ -2,7 +2,7 @@ import { ThemeProvider as ThemeProviderStyled } from 'styled-components'
 import React, { createContext, useState } from 'react';
 import dark from '@/styles/themes/dark';
 import light from '@/styles/themes/light';
-import usePersistedState from '@/utils/usePersistedState';
+import usePersistedState from '@/hooks/usePersistedState';
 
 type ThemeOptions = "dark" | "light"
 
