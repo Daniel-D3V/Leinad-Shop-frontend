@@ -1,4 +1,4 @@
-import { DevicesCardDeviceStyled } from "./styles"
+import { DevicesCardDeviceApplicationStyled, DevicesCardDeviceStyled, DevicesCardDeviceSeparatorStyled } from "./styles"
 
 export type DevicesCardDeviceProps = {
     system: "windows" | "linux" | "android" | "ios",
@@ -9,7 +9,8 @@ export const DevicesCardDevice = ({ system, application }: DevicesCardDeviceProp
     return (
         <DevicesCardDeviceStyled>
             {system.toUpperCase()}
-            {application === "application" ? "Leinad Shop - Aplicativo" : application.toUpperCase()}
+            <DevicesCardDeviceSeparatorStyled />
+            <DevicesCardDeviceApplicationStyled>{application === "application" ? "Leinad Shop - Aplicativo" : application.toUpperCase()}</DevicesCardDeviceApplicationStyled>
         </DevicesCardDeviceStyled>
     )
 }

@@ -1,5 +1,6 @@
 import { Header } from "@/pages/dashboard/_shared/Header/Layout"
 import Link from "next/link"
+import { DevicesCard } from "../Organisms/DevicesCard"
 
 export const DashboardSecurityConnectedDevicesLayout = () => {
     return (
@@ -13,6 +14,7 @@ export const DashboardSecurityConnectedDevicesLayout = () => {
                     🐰 Dica do Ralph: Se você não reconhecer algum dispositivo logado em sua conta, <Link href="/dashboard/security/change-password">mude a senha</Link> imediatamente.
                 </Header.Description>
             </Header.Root>
+            <DevicesCard />
         </>
     )
 }

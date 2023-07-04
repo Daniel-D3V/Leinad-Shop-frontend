@@ -1,14 +1,15 @@
 import { DevicesCardDeviceProps } from "./Device"
-import { DevicesCardDeviceStyled } from "./Device/styles"
+import { DevicesCardDevice } from "./Device";
 import { DevicesCardLocalization, DevicesCardLocalizationProps } from "./Localization"
+import { DeviceCardDetailsStyled } from "./styles"
 
-type DevicesCardDetailsProps = DevicesCardLocalizationProps & DevicesCardDeviceProps
+export type DevicesCardDetailsProps = DevicesCardLocalizationProps & DevicesCardDeviceProps
 
 export const DevicesCardDetails = (props: DevicesCardDetailsProps) => {
     return (
-        <DevicesCardDeviceStyled>
+        <DeviceCardDetailsStyled>
             <DevicesCardDevice {...props} />
             <DevicesCardLocalization {...props} />
-        </DevicesCardDeviceStyled>
+        </DeviceCardDetailsStyled>
     )
 }

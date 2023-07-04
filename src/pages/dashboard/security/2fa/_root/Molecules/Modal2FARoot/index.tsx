@@ -13,6 +13,15 @@ export const Modal2FARoot = ({ show, setShow }: Props) => {
                 <Modal2FARootBackdropStyled>
                     <Modal2FARootStyled>
                         <Modal2FAHeader onClickClose={() => { setShow(false) }} />
+                        sadad
+                        ada
+                        sda
+                        sdas
+                        das
+                        da
+                        das
+                        da
+                        dasdas
                     </Modal2FARootStyled>
                 </Modal2FARootBackdropStyled>
             )}

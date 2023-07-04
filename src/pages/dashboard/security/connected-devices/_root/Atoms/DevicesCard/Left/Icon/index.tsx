@@ -9,7 +9,7 @@ export const DevicesCardIcon = ({ application }: DevicesCardIconProps) => {
     return (
         <DevicesCardIconStyled>
             {application === "laptop" && (<HiComputerDesktop />)}
-            {application === "laptop" && (<HiDevicePhoneMobile />)}
+            {application === "mobile" && (<HiDevicePhoneMobile />)}
         </DevicesCardIconStyled>
     )
 }
