@@ -1,15 +1,15 @@
 import { DevicesCardIconStyled } from "./styles"
 import { HiComputerDesktop, HiDevicePhoneMobile } from 'react-icons/hi2';
 
-type DevicesCardIconProps = {
-    application: "laptop" | "mobile"
+export type DevicesCardIconProps = {
+    device: "laptop" | "mobile"
 }
 
-export const DevicesCardIcon = ({ application }: DevicesCardIconProps) => {
+export const DevicesCardIcon = ({ device }: DevicesCardIconProps) => {
     return (
         <DevicesCardIconStyled>
-            {application === "laptop" && (<HiComputerDesktop />)}
-            {application === "mobile" && (<HiDevicePhoneMobile />)}
+            {device === "laptop" && (<HiComputerDesktop />)}
+            {device === "mobile" && (<HiDevicePhoneMobile />)}
         </DevicesCardIconStyled>
     )
 }

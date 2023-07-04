@@ -1,8 +1,22 @@
 import { Header } from "@/pages/dashboard/_shared/Header/Layout"
 import Link from "next/link"
 import { DevicesCard } from "../Organisms/DevicesCard"
+import { RowDevices, RowDevicesProps } from "../Organisms/RowDevices"
 
 export const DashboardSecurityConnectedDevicesLayout = () => {
+
+    const devices: RowDevicesProps = {
+        actual: {
+            contry: "Brazil",
+            state: "Minas gerais",
+            city: "Centralina",
+            system: "windows",
+            application: "chrome",
+            device: "laptop"
+        },
+        others: []
+    }
+
     return (
         <>
             <Header.Root>
@@ -14,7 +28,7 @@ export const DashboardSecurityConnectedDevicesLayout = () => {
                     🐰 Dica do Ralph: Se você não reconhecer algum dispositivo logado em sua conta, <Link href="/dashboard/security/change-password">mude a senha</Link> imediatamente.
                 </Header.Description>
             </Header.Root>
-            <DevicesCard />
+            <RowDevices {...devices} />
         </>
     )
 }
