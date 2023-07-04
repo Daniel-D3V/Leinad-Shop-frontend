@@ -1,4 +1,4 @@
-import { TimeAgo } from "@/components/TimeAgo";
+import { TimeAgo } from "@/components/Utils/TimeAgo";
 import { DevicesCardLocalizationSeparatorStyled, DevicesCardLocalizationStyled } from "./styles";
 
 export type DevicesCardLocalizationProps = {

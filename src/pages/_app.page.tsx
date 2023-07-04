@@ -4,7 +4,7 @@ import GlobalStyle from '@/styles/globals';
 import { ThemeProvider } from '@/context/ThemeProvider.context';
 import { EventProvider } from '@/context/EventProvider.context';
 import { ToastContainer } from '@/components/Utils/ToastContainer';
-import { ProgressBar } from '@/components/ProgressBar';
+import { ProgressBar } from '@/components/Utils/ProgressBar';
 
 export default function App({ Component, pageProps }: AppProps) {
 

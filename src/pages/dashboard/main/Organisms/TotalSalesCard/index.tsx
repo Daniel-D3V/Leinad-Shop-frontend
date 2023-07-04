@@ -1,4 +1,3 @@
-import { toast } from "react-hot-toast"
 import { TotalSalesCardDetails } from "../../Atoms/TotalSalesCard/Details"
 import { TotalSalesCardSelectButton } from "../../Atoms/TotalSalesCard/SelectButton"
 import { ColTotalSalesCardStyled, RowTotalSalesCardStyled, TotalSalesCardStyled } from "./styles"
