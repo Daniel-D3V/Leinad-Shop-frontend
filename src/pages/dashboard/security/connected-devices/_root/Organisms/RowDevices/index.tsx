@@ -1,7 +1,9 @@
+import { Row } from "react-bootstrap"
 import { RowDevicesTitle } from "../../Atoms/RowDevices/Title"
 import { RowDevicesRoot } from "../../Molecules/RowDevices"
 import { RowDevicesGroup } from "../../Molecules/RowDevices/Group"
 import { DevicesCard, DevicesCardProps } from "../DevicesCard"
+import { RowDevicesGroupRow } from "../../Molecules/RowDevices/Group/Row"
 
 export type RowDevicesProps = {
     actual: DevicesCardProps
@@ -13,13 +15,17 @@ export const RowDevices = (props: RowDevicesProps) => {
         <RowDevicesRoot>
             <RowDevicesGroup>
                 <RowDevicesTitle title="Dispositivo atual:" />
-                <DevicesCard {...props.actual} />
+                <RowDevicesGroupRow>
+                    <DevicesCard {...props.actual} />
+                </RowDevicesGroupRow>
             </RowDevicesGroup>
             <RowDevicesGroup>
                 <RowDevicesTitle title="Outros dispositivos:" />
-                {props.others.map(device => (
-                    <DevicesCard {...device} />
-                ))}
+                <RowDevicesGroupRow>
+                    {props.others.map(device => (
+                        <DevicesCard {...device} />
+                    ))}
+                </RowDevicesGroupRow>
             </RowDevicesGroup>
         </RowDevicesRoot>
     )

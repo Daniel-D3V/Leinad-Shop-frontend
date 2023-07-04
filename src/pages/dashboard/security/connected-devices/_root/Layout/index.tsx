@@ -14,7 +14,24 @@ export const DashboardSecurityConnectedDevicesLayout = () => {
             application: "chrome",
             device: "laptop"
         },
-        others: []
+        others: [
+            {
+                contry: "Brazil",
+                state: "São paulo",
+                city: "Osasco",
+                system: "android",
+                application: "application",
+                device: "mobile"
+            },
+            {
+                contry: "Brazil",
+                state: "São paulo",
+                city: "Osasco",
+                system: "linux",
+                application: "chrome",
+                device: "laptop"
+            }
+        ]
     }
 
     return (
